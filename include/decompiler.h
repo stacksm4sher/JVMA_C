@@ -1,0 +1,4 @@
+#ifndef JVMA_DECOMPILER_H
+#define JVMA_DECOMPILER_H
+
+#endif //JVMA_DECOMPILER_H
