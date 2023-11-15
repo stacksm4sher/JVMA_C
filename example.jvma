@@ -1,0 +1,108 @@
+.gi:
+    mnv 0
+    mjv 52
+    cpc 112
+    af public
+    tc var20
+    sc var21
+    ic 0
+    fc 3
+    mc 2
+    ac 3
+
+.cpi:
+    var20 var88
+    var21 var89
+    var22 "connectEventHandler"
+    var23 "Lcom/stacksm4sher/autokick/events/ConnectEventHandler;";
+    var24 "setKickCommandSingleton"
+    var25 "Lcom/stacksm4sher/autokick/commands/SetKickCommandSingleton;";
+    var26 "logger"
+    var27 "Lorg/slf4j/Logger;";
+    var88 "com/stacksm4sher/autokick/AutoKick"
+    var89 "java/lang/Object"
+
+.ii:
+
+.fi:
+   private final var22 var23
+   private final var24 var25
+   private final var26 var27
+
+   ; user created field
+   private static final "staticLogger" "Lorg/slf4j/Logger"
+
+.mi:
+    public var28 var29 .c0
+    public var37 var38 .c1
+
+    ; user created method
+    private "example" "(Ljava/lang/String;II)V" .exampleCode
+
+.c0:
+    aload 0
+    invokespecial var1
+    aload 0
+    aload 1
+    putfield var2
+    aload 0
+    aload 2
+    putfield var3
+    aload 0
+    aload 3
+    putfield var4
+    return
+
+.c1:
+    aload 0
+    getfield var4
+    ldc var5
+    invokeinterface var6
+    invokestatic var7
+    aload 0
+    aload 0
+    getfield var3
+    invokevirtual var8
+    iconst_1
+    anewarray var9
+    dup
+    iconst_0
+    ldc var10
+    aastore
+    invokeinterface var11
+    pop
+    aload 0
+    getfield var4
+    ldc var12
+    invokeinterface var6
+    invokestatic var13
+    aload 0
+    ldc var14
+    aload 0
+    getfield var4
+    ldc var16
+    invokeinterface var6
+    aload 0
+    getfield var4
+    ldc var17
+    invokeinterface var6
+    invokestatic var18
+    pop
+    aload 0
+    getfield var4
+    ldc var19
+    invokeinterface var6
+    return
+
+.exampleCode:
+    getstatic Ljava/lang/System out Ljava/io/PrintStream;
+    aload 1
+    invokevirtual java/io/PrintStream println (Ljava/lang/String;)V
+
+    getstatic Ljava/lang/System out Ljava/io/PrintStream;
+    iload 2
+    iload 3
+    iadd
+    invokevirtual java/io/PrintStream println (I)V
+
+    return
